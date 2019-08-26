@@ -1,9 +1,7 @@
 package pl.sokolow.testtask.prevapp;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -25,7 +23,7 @@ public class MainApplication {
 		SquareService squareService = ctx.getBean(SquareService.class);
 		
 		List<Double> squaredDigits = squareService.squareList();
-
+	
 		System.out.println(Arrays.toString(squaredDigits.toArray()));
 	}
 }
